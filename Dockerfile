@@ -12,7 +12,7 @@ RUN npm install --loglevel=error
 
 COPY . .
 
-RUN NODE_OPTIONS=--openssl-legacy-provider REACT_APP_API_URL=http://bia-pipeline-youtube1.us-east-1.elasticbeanstalk.com npm run build --prefix client
+RUN NODE_OPTIONS=--openssl-legacy-provider REACT_APP_API_URL=http://34.239.240.133 npm run build --prefix client
 
 RUN mv client/build build
 
